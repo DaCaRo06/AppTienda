@@ -19,4 +19,12 @@
     <string name="register_have_account">¿Ya tienes cuenta?</string>
     <string name="register_go_login">Inicia sesión</string>
 
+    <!-- welcome_activity.xml -->
+    <string name="welcome_brand">Tienda de Ropa</string>
+    <string name="welcome_tagline">Descubre las últimas tendencias en moda</string>
+    <string name="welcome_description">Crea tu cuenta para guardar tus favoritos, comprar más rápido y seguir tus pedidos</string>
+    <string name="welcome_login">Iniciar sesión</string>
+    <string name="welcome_register">Crear cuenta</string>
+    <string name="welcome_guest">Explorar el catálogo</string>
+
 </resources>
