@@ -27,4 +27,12 @@
     <string name="welcome_register">Crear cuenta</string>
     <string name="welcome_guest">Explorar el catálogo</string>
 
+    <!-- Recuperación de contraseña -->
+    <string name="recovery_title">Recupera tu contraseña</string>
+    <string name="recovery_subtitle">Introduce tu correo y te enviaremos un código de verificación</string>
+    <string name="recovery_send_code">Enviar código</string>
+    <string name="recovery_code">Código de verificación</string>
+    <string name="recovery_code_helper">Introduce el código de 6 dígitos que te hemos enviado</string>
+    <string name="recovery_verify">Verificar código</string>
+    <string name="recovery_back">Volver a iniciar sesión</string>
 </resources>
