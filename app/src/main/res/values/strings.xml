@@ -35,4 +35,11 @@
     <string name="recovery_code_helper">Introduce el código de 6 dígitos que te hemos enviado</string>
     <string name="recovery_verify">Verificar código</string>
     <string name="recovery_back">Volver a iniciar sesión</string>
+
+    <!-- Error -->
+    <string name="error_title">Algo ha salido mal</string>
+    <string name="error_banner">Correo o contraseña incorrectos. Revisa tus datos e inténtalo de nuevo.</string>
+    <string name="error_password_helper">La contraseña no es correcta</string>
+    <string name="error_retry">Intentar de nuevo</string>
+    <string name="error_forgot">Recuperar contraseña</string>
 </resources>
