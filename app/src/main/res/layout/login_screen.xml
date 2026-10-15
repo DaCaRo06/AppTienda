@@ -17,13 +17,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
         <!--Título -->
+        <!--Subtitulos -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/login_title"
             android:textSize="28sp"
-            android:textStyle="bold"/>
-        <!--Subtitulos -->
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -96,7 +97,7 @@
             android:gravity="center"
             android:minHeight="48dp"
             android:text="@string/login_guest"
-            android:textColor="@color/link_text"
+            android:textColor="@color/purple"
             android:textStyle="bold" />
     </LinearLayout>
 

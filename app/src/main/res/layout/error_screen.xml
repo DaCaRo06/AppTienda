@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="@color/error_banner_bg"
+            android:background="@color/error_banner"
             android:padding="16dp"
             android:text="@string/error_banner"
             android:textColor="@color/error_banner_text"

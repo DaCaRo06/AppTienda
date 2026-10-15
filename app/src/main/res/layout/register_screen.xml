@@ -117,7 +117,7 @@
                 android:minHeight="48dp"
                 android:gravity="center_vertical"
                 android:text="@string/register_go_login"
-                android:textColor="@color/link_text"
+                android:textColor="@color/purple"
                 android:textStyle="bold"/>
         </LinearLayout>
     </LinearLayout>
