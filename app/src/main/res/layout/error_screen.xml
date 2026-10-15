@@ -66,7 +66,7 @@
             app:helperTextTextColor="@color/error">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etErrPassword"
+                android:id="@+id/etErrContraseña"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -74,14 +74,14 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnRetry"
+            android:id="@+id/btnReintentar"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginTop="16dp"
             android:text="@string/error_retry"/>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnErrForgot"
+            android:id="@+id/btnErrorOlvidar"
             style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="match_parent"
             android:layout_height="56dp"
