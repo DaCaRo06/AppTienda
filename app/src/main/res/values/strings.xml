@@ -26,6 +26,8 @@
     <string name="login_button">Iniciar sesión</string>
     <string name="login_google">Continuar con Google</string>
     <string name="login_guest">Continuar como invitado</string>
+    <string name="question_register">¿No tienes cuenta?</string>
+    <string name="back_register">Crear cuenta</string>
 
     <!-- forgot_password_screen.xml -->
     <string name="recovery_title">Recupera tu contraseña</string>
@@ -42,4 +44,6 @@
     <string name="error_password_helper">La contraseña no es correcta</string>
     <string name="error_retry">Intentar de nuevo</string>
     <string name="error_forgot">Recuperar contraseña</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
