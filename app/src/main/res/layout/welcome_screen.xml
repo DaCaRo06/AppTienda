@@ -47,7 +47,7 @@
             android:text="@string/welcome_login"/>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnWelcomeRegister"
+            android:id="@+id/btnBienvenidoRegister"
             style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="match_parent"
             android:layout_height="56dp"
