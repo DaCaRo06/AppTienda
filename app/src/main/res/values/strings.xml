@@ -28,6 +28,8 @@
     <string name="login_guest">Continuar como invitado</string>
     <string name="question_register">¿No tienes cuenta?</string>
     <string name="back_register">Crear cuenta</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="recover_password">Recuperar contraseña</string>
 
     <!-- forgot_password_screen.xml -->
     <string name="recovery_title">Recupera tu contraseña</string>
