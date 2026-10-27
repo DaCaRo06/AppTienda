@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="24dp">
+        android:padding="16dp">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"
@@ -19,7 +19,6 @@
             app:layout_constraintGuide_percent="0.4" />
 
         <LinearLayout
-            android:id="@+id/leftHeaderContainer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -70,8 +69,8 @@
             </LinearLayout>
         </LinearLayout>
 
+        <!-- Columna Derecha -->
         <LinearLayout
-            android:id="@+id/rightFormContainer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -140,8 +139,8 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:layout_marginTop="12dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/register_button" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
