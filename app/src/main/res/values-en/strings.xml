@@ -1,0 +1,50 @@
+<resources>
+    <!-- welcome_activity.xml -->
+    <string name="welcome">Clothing Store</string>
+    <string name="welcome_text">Discover the latest fashion trends</string>
+    <string name="welcome_description">Create your account to save your favorites, shop faster, and track your orders</string>
+    <string name="welcome_login">Log in</string>
+    <string name="welcome_register">Create account</string>
+    <string name="welcome_guest">Explore the catalog</string>
+
+    <!-- register_screen.xml-->
+    <string name="register_title">Create your account</string>
+    <string name="register_subtitle">We only need three details to get started</string>
+    <string name="register_name">Name</string>
+    <string name="register_email_helper">We will send you an email to confirm your account</string>
+    <string name="register_button">Create account</string>
+    <string name="register_have_account">Already have an account?</string>
+    <string name="register_go_login">Log in</string>
+
+    <!-- login_screen.xml -->
+    <string name="app_name">AppTienda</string>
+    <string name="login_title">Welcome</string>
+    <string name="login_subtitle">Log in to shop and track your orders</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_password_helper">Minimum 8 characters and one uppercase letter</string>
+    <string name="login_button">Log in</string>
+    <string name="login_google">Continue with Google</string>
+    <string name="login_guest">Continue as guest</string>
+    <string name="question_register">Don\'t have an account?</string>
+    <string name="back_register">Create account</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="recover_password">Recover password</string>
+
+    <!-- forgot_password_screen.xml -->
+    <string name="recovery_title">Recover your password</string>
+    <string name="recovery_subtitle">Enter your email and we will send you a verification code</string>
+    <string name="recovery_send_code">Send code</string>
+    <string name="recovery_code">Verification code</string>
+    <string name="recovery_code_helper">Enter the 6-digit code we sent you</string>
+    <string name="recovery_verify">Verify code</string>
+    <string name="back_login">Back to log in</string>
+
+    <!-- error_screen.xml -->
+    <string name="error_title">Something went wrong</string>
+    <string name="error_banner">Incorrect email or password. Check your details and try again.</string>
+    <string name="error_password_helper">Incorrect password</string>
+    <string name="error_retry">Try again</string>
+    <string name="error_forgot">Recover password</string>
+
+</resources>
