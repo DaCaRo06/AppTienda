@@ -22,7 +22,7 @@
     <string name="login_subtitle">Inicia sesión para comprar y seguir tus pedidos</string>
     <string name="login_email">Correo electrónico</string>
     <string name="login_password">Contraseña</string>
-    <string name="login_password_helper">Mínimo 8 caracteres y una mayúscula</string>
+    <string name="login_password_helper">Mínimo 6 caracteres</string>
     <string name="login_button">Iniciar sesión</string>
     <string name="login_google">Continuar con Google</string>
     <string name="login_guest">Continuar como invitado</string>

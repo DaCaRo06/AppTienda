@@ -22,7 +22,7 @@
     <string name="login_subtitle">Log in to shop and track your orders</string>
     <string name="login_email">Email</string>
     <string name="login_password">Password</string>
-    <string name="login_password_helper">Minimum 8 characters and one uppercase letter</string>
+    <string name="login_password_helper">Minimum 6 characters</string>
     <string name="login_button">Log in</string>
     <string name="login_google">Continue with Google</string>
     <string name="login_guest">Continue as guest</string>
