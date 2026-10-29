@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.example.apptienda.WelcomeFragment"
+        android:name="com.daniel.apptienda.WelcomeFragment"
         android:label="WelcomeFragment" >
         <action
             android:id="@+id/action_welcomeFragment_to_loginFragment"
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.apptienda.LoginFragment"
+        android:name="com.daniel.apptienda.LoginFragment"
         android:label="LoginFragment" >
         <action
             android:id="@+id/action_loginFragment_to_registerFragment"
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.example.apptienda.RegisterFragment"
+        android:name="com.daniel.apptienda.RegisterFragment"
         android:label="RegisterFragment" >
         <action
             android:id="@+id/action_registerFragment_to_loginFragment"
@@ -36,7 +36,7 @@
     </fragment>
     <fragment
         android:id="@+id/forgotPasswordFragment"
-        android:name="com.example.apptienda.ForgotPasswordFragment"
+        android:name="com.daniel.apptienda.ForgotPasswordFragment"
         android:label="ForgotPasswordFragment" >
         <action
             android:id="@+id/action_forgotPasswordFragment_to_loginFragment"

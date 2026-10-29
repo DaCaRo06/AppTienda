@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.apptienda"
+    namespace = "com.daniel.apptienda"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.apptienda"
+        applicationId = "com.daniel.apptienda"
         minSdk = 24
         targetSdk = 37
         versionCode = 1
