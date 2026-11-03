@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- welcome_activity.xml -->
     <string name="welcome">Tienda de Ropa</string>
     <string name="welcome_text">Descubre las últimas tendencias en moda</string>
@@ -46,5 +46,8 @@
     <string name="error_password_helper">La contraseña no es correcta</string>
     <string name="error_retry">Intentar de nuevo</string>
     <string name="error_forgot">Recuperar contraseña</string>
+    <string name="error_invalid_email">Correo electrónico inválido</string>
+    <string name="error_password_too_short">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="error_invalid_credentials">Correo o contraseña incorrectos</string>
 
 </resources>
