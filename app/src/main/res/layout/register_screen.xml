@@ -32,6 +32,7 @@
 
         <!-- Nombre -->
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilRegNombre"
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,6 +52,7 @@
 
         <!--Correo -->
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilRegEmail"
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -71,6 +73,7 @@
 
         <!-- Contraseña -->
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilRegPassword"
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -82,7 +85,7 @@
             app:helperTextEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etRegContraseña"
+                android:id="@+id/etRegPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="newPassword"

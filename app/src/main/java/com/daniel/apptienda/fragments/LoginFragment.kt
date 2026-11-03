@@ -12,6 +12,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import com.daniel.apptienda.R
 import com.daniel.apptienda.databinding.LoginScreenBinding
@@ -62,7 +63,9 @@ class LoginFragment : Fragment() {
                     viewModel.uiEvent.collect { event ->
                         when (event) {
                             is LoginUiEvent.NavigateToHome -> {
-                                Toast.makeText(requireContext(), "¡Login exitoso!", Toast.LENGTH_SHORT).show()
+                                // Navegar a la siguiente pantalla
+                                val navHostFragment = requireActivity().supportFragmentManager
+                                    .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
                             }
                             is LoginUiEvent.ShowError -> {
                                 Toast.makeText(requireContext(), getString(event.messageResId), Toast.LENGTH_SHORT).show()
