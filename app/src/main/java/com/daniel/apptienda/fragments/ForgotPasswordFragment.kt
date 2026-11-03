@@ -1,4 +1,4 @@
-package com.daniel.apptienda
+package com.daniel.apptienda.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,25 +7,26 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.navigation.fragment.findNavController
-import com.daniel.apptienda.databinding.RegisterScreenBinding
+import com.daniel.apptienda.R
+import com.daniel.apptienda.databinding.ForgotPasswordScreenBinding
 
-class RegisterFragment : Fragment() {
+class ForgotPasswordFragment : Fragment() {
 
-    private lateinit var binding: RegisterScreenBinding
+    private lateinit var binding: ForgotPasswordScreenBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = RegisterScreenBinding.inflate(inflater, container, false)
+        binding = ForgotPasswordScreenBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<TextView>(R.id.tvIrALogin).setOnClickListener {
-            findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
+        view.findViewById<TextView>(R.id.tvVolverALogin).setOnClickListener {
+            findNavController().navigate(R.id.action_forgotPasswordFragment_to_loginFragment)
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.daniel.apptienda
+package com.daniel.apptienda.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.NavHostFragment
+import com.daniel.apptienda.R
 import com.daniel.apptienda.databinding.WelcomeScreenBinding
 
 class WelcomeFragment : Fragment() {
