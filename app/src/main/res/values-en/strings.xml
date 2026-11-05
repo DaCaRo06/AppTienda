@@ -46,5 +46,10 @@
     <string name="error_password_helper">Incorrect password</string>
     <string name="error_retry">Try again</string>
     <string name="error_forgot">Recover password</string>
+    <string name="error_invalid_email">Invalid email address</string>
+    <string name="error_password_too_short">Password must be at least 6 characters</string>
+    <string name="error_invalid_credentials">Incorrect email or password</string>
 
+    <!-- home_screen.xml -->
+    <string name="home">Home</string>
 </resources>

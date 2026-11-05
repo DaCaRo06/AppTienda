@@ -50,4 +50,6 @@
     <string name="error_password_too_short">La contraseña debe tener al menos 6 caracteres</string>
     <string name="error_invalid_credentials">Correo o contraseña incorrectos</string>
 
+    <!-- home_screen.xml -->
+    <string name="home">Home</string>
 </resources>
