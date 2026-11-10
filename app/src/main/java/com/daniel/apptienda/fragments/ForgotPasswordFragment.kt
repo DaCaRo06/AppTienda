@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import android.widget.Toast
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.viewModels
@@ -36,7 +35,7 @@ class ForgotPasswordFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Volver al login
-        view.findViewById<TextView>(R.id.tvVolverALogin)?.setOnClickListener {
+        binding.tvVolverALogin.setOnClickListener {
             findNavController().navigate(R.id.action_forgotPasswordFragment_to_loginFragment)
         }
 
