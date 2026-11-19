@@ -50,6 +50,6 @@
     <string name="error_password_too_short">Password must be at least 6 characters</string>
     <string name="error_invalid_credentials">Incorrect email or password</string>
 
-    <!-- home_screen.xml -->
+    <!-- fragment_list_screen.xml -->
     <string name="home">Home</string>
 </resources>
