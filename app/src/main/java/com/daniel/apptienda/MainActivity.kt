@@ -5,6 +5,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.drawerlayout.widget.DrawerLayout
@@ -14,11 +15,13 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupWithNavController
 import com.daniel.apptienda.databinding.ActivityMainBinding
 import com.daniel.apptienda.fragments.ListFragment
+import com.daniel.apptienda.viewmodels.ListViewModel
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), ListFragment.OnListVisibilityListener {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var appBarConfiguration: AppBarConfiguration
+    private val listViewModel: ListViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.listFragment,
+                R.id.tabFragment,
                 R.id.contactFragment,
                 R.id.preferencesFragment
             ),
@@ -59,9 +62,10 @@ class MainActivity : AppCompatActivity() {
                     binding.drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
                     supportActionBar?.setDisplayHomeAsUpEnabled(false)
                 }
-                R.id.listFragment -> {
+                R.id.tabFragment -> {
                     binding.bottomNavigation.visibility = View.VISIBLE
-                    binding.floatingActionButton.visibility = View.VISIBLE
+                    // El botón flotante lo muestra ListFragment (onListVisibilityChanged)
+                    binding.floatingActionButton.visibility = View.GONE
                     binding.drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
                 }
                 else -> {
@@ -99,11 +103,8 @@ class MainActivity : AppCompatActivity() {
             override fun onQueryTextSubmit(query: String?): Boolean = false
 
             override fun onQueryTextChange(newText: String?): Boolean {
-                val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as? NavHostFragment
-                val currentFragment = navHostFragment?.childFragmentManager?.fragments?.firstOrNull()
-                if (currentFragment is ListFragment) {
-                    currentFragment.filterProducts(newText)
-                }
+                if (newText != null)
+                    listViewModel.setSearchText(newText)
                 return true
             }
         })
@@ -116,7 +117,7 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment?.navController
         val currentDestinationId = navController?.currentDestination?.id
 
-        val isListScreen = currentDestinationId == R.id.listFragment
+        val isListScreen = currentDestinationId == R.id.tabFragment
 
         val searchItem = menu.findItem(R.id.action_search)
         val sortItem = menu.findItem(R.id.action_sort)
@@ -130,15 +131,15 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_sort -> {
-                val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as? NavHostFragment
-                val currentFragment = navHostFragment?.childFragmentManager?.fragments?.firstOrNull()
-                if (currentFragment is ListFragment) {
-                    currentFragment.toggleSort()
-                }
+                listViewModel.toggleSort()
                 true
             }
             else -> super.onOptionsItemSelected(item)
         }
+    }
+
+    override fun onListVisibilityChanged(visible: Boolean) {
+        binding.floatingActionButton.visibility = if (visible) View.VISIBLE else View.GONE
     }
 
     override fun onSupportNavigateUp(): Boolean {
