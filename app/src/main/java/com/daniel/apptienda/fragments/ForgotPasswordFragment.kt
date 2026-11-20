@@ -54,7 +54,7 @@ class ForgotPasswordFragment : Fragment() {
                     viewModel.uiEvent.collect { event ->
                         when (event) {
                             is ForgotPasswordUiEvent.NavigateToLogin -> {
-                                Toast.makeText(requireContext(), "Correo de recuperación enviado", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(requireContext(), getString(R.string.recovery_email_sent), Toast.LENGTH_SHORT).show()
                                 findNavController().navigate(R.id.action_forgotPasswordFragment_to_loginFragment)
                             }
                             is ForgotPasswordUiEvent.ShowError -> {

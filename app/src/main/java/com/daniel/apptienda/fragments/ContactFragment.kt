@@ -7,18 +7,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.daniel.apptienda.databinding.FragmentContactBinding
+import com.daniel.apptienda.R
+import com.daniel.apptienda.databinding.FragmentContactScreenBinding
 
 class ContactFragment : Fragment() {
 
-    private var _binding: FragmentContactBinding? = null
+    private var _binding: FragmentContactScreenBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentContactBinding.inflate(inflater, container, false)
+        _binding = FragmentContactScreenBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -41,7 +42,7 @@ class ContactFragment : Fragment() {
         binding.btnEmail.setOnClickListener {
             val intent = Intent(Intent.ACTION_SENDTO)
             intent.data = Uri.parse("mailto:info@lalibreria.com")
-            intent.putExtra(Intent.EXTRA_SUBJECT, "Consulta desde la app")
+            intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.contact_email_subject))
             startActivity(intent)
         }
     }

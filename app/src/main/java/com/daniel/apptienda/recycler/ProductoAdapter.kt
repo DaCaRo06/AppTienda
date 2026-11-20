@@ -33,7 +33,7 @@ class ProductoAdapter(private var items: List<Producto>) :
         fun bind(data: Producto) {
             binding.tvNombre.text = data.nombre
             binding.tvDescripcion.text = data.descripcion
-            binding.tvPrecio.text = "${data.precio} €"
+            binding.tvPrecio.text = binding.root.context.getString(R.string.price_format, data.precio.toString())
 
             if (data.isFav) {
                 binding.ivFav.setImageResource(R.drawable.ic_favorite)
