@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/listFragment">
 
     <fragment
         android:id="@+id/welcomeFragment"
@@ -27,7 +27,10 @@
             app:destination="@id/forgotPasswordFragment" />
         <action
             android:id="@+id/action_loginFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_listFragment"
+            app:destination="@id/listFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -38,7 +41,10 @@
             app:destination="@id/loginFragment" />
         <action
             android:id="@+id/action_registerFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_listFragment"
+            app:destination="@id/listFragment" />
     </fragment>
     <fragment
         android:id="@+id/forgotPasswordFragment"
@@ -49,7 +55,15 @@
             app:destination="@id/loginFragment" />
     </fragment>
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/listFragment"
         android:name="com.daniel.apptienda.fragments.ListFragment"
-        android:label="HomeFragment" />
+        android:label="@string/title_home" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.daniel.apptienda.fragments.ContactFragment"
+        android:label="@string/title_contact" />
+    <fragment
+        android:id="@+id/preferencesFragment"
+        android:name="com.daniel.apptienda.fragments.PreferencesFragment"
+        android:label="@string/title_preferences" />
 </navigation>

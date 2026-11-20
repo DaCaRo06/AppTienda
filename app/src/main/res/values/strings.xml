@@ -1,5 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <!-- welcome_activity.xml -->
+
+    <!-- welcome_screen.xml -->
     <string name="welcome">Tienda de Ropa</string>
     <string name="welcome_text">Descubre las últimas tendencias en moda</string>
     <string name="welcome_description">Crea tu cuenta para guardar tus favoritos, comprar más rápido y seguir tus pedidos</string>
@@ -7,7 +8,7 @@
     <string name="welcome_register">Crear cuenta</string>
     <string name="welcome_guest">Explorar el catálogo</string>
 
-    <!-- register_screen.xml-->
+    <!-- register_screen.xml -->
     <string name="register_title">Crea tu cuenta</string>
     <string name="register_subtitle">Solo necesitamos tres datos para empezar</string>
     <string name="register_name">Nombre</string>
@@ -52,4 +53,43 @@
 
     <!-- fragment_list_screen.xml -->
     <string name="home">Home</string>
+    <string name="title_home">AppTienda</string>
+
+    <!-- fragment_contact.xml -->
+    <string name="contact_title">Contáctanos</string>
+    <string name="call_us">Llamar</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="email_us">Enviar Correo</string>
+    <string name="title_contact">Contactos</string>
+
+    <!-- fragment_preferences.xml -->
+    <string name="preferences_title">Preferencias</string>
+    <string name="pref_language">Cambiar Idioma</string>
+    <string name="pref_theme">Modo Oscuro</string>
+    <string name="pref_notifications">Notificaciones Push</string>
+    <string name="title_preferences">Preferencias</string>
+
+    <!-- item_producto.xml -->
+    <string name="content_desc_favorite">Favorito</string>
+
+    <!-- nav_header.xml -->
+    <string name="content_desc_logo">Logotipo de la app</string>
+    <string name="contact_email">contacto@apptienda.com</string>
+
+    <!-- drawer.xml -->
+    <string name="menu_home">Home</string>
+    <string name="menu_contact">Contacto</string>
+    <string name="menu_preferences">Preferencias</string>
+    <string name="menu_logout">Cerrar Sesión</string>
+    <string name="menu_session">Sesión</string>
+
+    <!-- toolbar.xml -->
+    <string name="search_hint">Buscar productos</string>
+    <string name="sort_action">Ordenar</string>
+    <string name="title_search">Buscar</string>
+    <string name="title_sort">Ordenar</string>
+    <string name="title_settings">Ajustes</string>
+    <string name="menu_subitem1">Subitem 1</string>
+    <string name="menu_subitem2">Subitem 2</string>
+
 </resources>
