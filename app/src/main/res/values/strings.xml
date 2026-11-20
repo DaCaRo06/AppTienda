@@ -55,14 +55,15 @@
     <string name="home">Home</string>
     <string name="title_home">AppTienda</string>
 
-    <!-- fragment_contact.xml -->
+    <!-- fragment_contact_screen.xml -->
     <string name="contact_title">Contáctanos</string>
     <string name="call_us">Llamar</string>
     <string name="whatsapp">WhatsApp</string>
     <string name="email_us">Enviar Correo</string>
     <string name="title_contact">Contactos</string>
+    <string name="contact_email_subject">Consulta desde la app</string>
 
-    <!-- fragment_preferences.xml -->
+    <!-- fragment_preferences_screen.xml -->
     <string name="preferences_title">Preferencias</string>
     <string name="pref_language">Cambiar Idioma</string>
     <string name="pref_theme">Modo Oscuro</string>
@@ -91,5 +92,15 @@
     <string name="title_settings">Ajustes</string>
     <string name="menu_subitem1">Subitem 1</string>
     <string name="menu_subitem2">Subitem 2</string>
+
+    <!-- ListFragment / ProductoAdapter -->
+    <string name="price_format">%1$s €</string>
+
+    <!-- TabFragment -->
+    <string name="tab_list">Lista</string>
+    <string name="tab_fav">Favoritos</string>
+
+    <!-- ForgotPasswordFragment -->
+    <string name="recovery_email_sent">Correo de recuperación enviado</string>
 
 </resources>
